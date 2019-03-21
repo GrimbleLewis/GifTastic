@@ -48,7 +48,7 @@ function displayAnimalGifs() {
       animalImage.attr("src", results[i].images.fixed_height.url);
       animalDiv.append(p);
       animalDiv.append(animalImage);
-      $("#animal-gifs").append(animalDiv);
+      $("#animal-gifs").prepend(animalDiv);
     }
 
     $(".gif").on("click", function() {
