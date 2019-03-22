@@ -40,7 +40,7 @@ function displayAnimalGifs() {
     // this for loop goes through the results length (which is limited to 10) and adds a class of gif and multiple attributes to help
     // control the gifs and adds details that appear on the page
     for (var i = 0; i < results.length; i++) {
-      var animalDiv = $("<div>");
+      var animalDiv = $("<div class='col-sm-4'>");
       var p = $("<p>").append(`
       Title: ${results[i].title.toUpperCase()}</br>
       Rating: ${results[i].rating.toUpperCase()}`);
